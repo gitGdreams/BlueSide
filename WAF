@@ -1,3 +1,24 @@
 https://coraza.io/docs/tutorials/quick-start/
 https://coreruleset.org/docs/deployment/install/
 https://coraza.io/docs/tutorials/coreruleset/
+
+
+LAB:
+1. Install and Configure the Web Application Server:
+  Install a web server (e.g., Apache, Nginx) and a database server (e.g., MySQL, PostgreSQL) on the designated VM.
+  Deploy a simple web application (you can use vulnerable applications like OWASP WebGoat or DVWA for testing).
+2. Set Up a Basic Network:
+  Configure the network settings to ensure communication between the web application server and the WAF.
+  Use host-only or NAT network configurations to simulate a local environment.
+3. Install and Configure the Web Application Firewall (WAF):
+  Install your chosen WAF software on the second VM. For example, ModSecurity is a widely used open-source WAF.
+  Configure the WAF to filter and protect the web application from common web vulnerabilities.
+  Define rules to block or log suspicious traffic.
+4. Test the WAF:
+  Simulate attacks on your web application to observe how the WAF detects and handles them.
+  Use tools like OWASP ZAP, Burp Suite, or manual testing to inject SQL injections, cross-site scripting (XSS), and other common vulnerabilities.
+  Monitor the WAF logs to analyze its behavior and effectiveness.
+5. Fine-Tune WAF Rules:
+  Adjust WAF rules based on your testing and observations.
+  Understand how different rules impact the WAF's ability to detect and prevent attacks.
+  Experiment with various settings to optimize the WAF for your specific web application.
